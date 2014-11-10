@@ -12,7 +12,7 @@
     </script>
 </head>
 <body>
-    <nav></nav>
+    <nav>Home</nav>
 <form method="POST" action="list.php">
 <div class="site-heading">
     <div id="tabs">
