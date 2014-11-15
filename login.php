@@ -18,15 +18,30 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="css/themes/smoothness/jquery-ui.css">
+    <link type = "text/css" rel="stylesheet" href="css/login.css">
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/jquery-ui.js"></script>
 </head>
 <body>
-    <form method="POST" action="<?=$_SERVER['PHP_SELF'];?>">    
-        <input type="text" name="username"/>
-        <input type="password" name="password"/>
-        <input type="submit" name="login" value="Log In"/>
-        <input type="hidden" name="token" value="<?=$token?>"/>
+    <form method="POST" action="<?=$_SERVER['PHP_SELF'];?>">  
+        
+		<div id = "block">
+			<label id= "user" for = "name">p</label>	
+			<input id= "name" type="text" name="username" placeholder="Email" required/>
+			
+			<label id= "pass" for = "password">k</label>
+			<input id = "password" type="password" name="password" placeholder="Password" required/>
+			
+			<input id="submit" type="submit" name="submit" value="a"/>
+			
+			<input type="hidden" name="token" value="<?=$token?>"/>
+		</div>
     </form>
+	
+	<div id="option"> 
+	    <p>Login</p> 
+	    <a href="#">forgot password?</a>
+    </div>
+	
+	
 </html> 
