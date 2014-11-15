@@ -1,0 +1,88 @@
+td{width: 300px;
+line-height: 30px;
+}
+
+h2{
+color: black;
+}
+
+div.main_container {
+margin-left: auto;
+margin-right: auto;
+width: 1010px;
+}
+
+div.main_container {
+margin: 0px auto 0pt;
+padding-top: 10px;
+}
+
+div.main_container {
+min-width: 1010px;
+}
+
+
+
+body {
+background: #0a84c1;
+color: #515050;
+}
+
+body {
+font-family: arial,helvetica,sans-serif;
+font-size: 80%;
+}
+
+#content {
+background: #FFFFFF;
+padding: 5px;
+font-family: "Helvetica Neue",Helvetica,Arial,Sans-Serif;
+color: #515050;
+font-size: 13px;
+}
+
+div #content{
+
+height:1561px
+}
+
+
+#sum_of_charges {
+font-family: Arial;
+color: #333;
+font-size: 14px;
+padding-top: 20px;
+margin-bottom: -25px;
+}
+
+
+media="all"
+table.summary_table {
+margin-left: 20px;
+margin-top: 20px;
+}
+contractPayment.domedia="all"
+table.summary_table {
+width: 708px;
+}
+contractPayment.domedia="all"
+.no-top-margin {
+margin-top: 0px !important;
+}
+table {
+text-align: left;
+color: #4F4F4F;
+}
+table[Attributes Style] {
+border-top-width: 0px;
+border-right-width: 0px;
+border-bottom-width: 0px;
+border-left-width: 0px;
+border-spacing: 0px;
+}
+user agent stylesheettable {
+display: table;
+border-collapse: separate;
+border-spacing: 2px;
+border-color: gray;
+}

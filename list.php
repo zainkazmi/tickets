@@ -8,7 +8,9 @@ if($search->didSearch()){
 }
 else{
     echo "Wrong page";
-}?>
+}
+
+echo "alert('hi')";?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -48,7 +50,7 @@ else{
                         <img style="width:30%; padding:10px; float:left" src="http://ontariospeeding.com/wp-content/uploads/2013/12/Speeding-Tickets.jpg">
                     </div>
                     <div id="mid-details" style="float:left">
-                        <span id="address"><?=$row['Name']?></span>
+                        <span id="address"><?=$row['Name'];?></span>
                         <div class="listitem_stars listitem_stars_4.0">
                             <span class="listitem_stars_desc">4-Star</span>
                         </div><br/>
@@ -64,7 +66,7 @@ else{
                                 <span class="listitem_price">
                                     <a class="listitem_price_link"> 
                                         <span class="listitem_price_currency">$</span>
-                                        <span class="listitem_price_amount"><?=$row['price']?></span>
+                                        <span class="listitem_price_amount"><?=$row['price'];?></span>
                                         <span class="listitem_price_unit">/ticket</span>
                                     </a>
                                 </span>
@@ -72,10 +74,10 @@ else{
                         </div> <!-- listitem_price_group -->
                     </div>
                     </div>
-                </div><?
+                </div><?php
                 }
             } ?>
         </div>
     </div>
 </body>
-</html.
+</html>
