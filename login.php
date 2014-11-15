@@ -32,7 +32,7 @@
 			<label id= "pass" for = "password">k</label>
 			<input id = "password" type="password" name="password" placeholder="Password" required/>
 			
-			<input id="submit" type="submit" name="submit" value="a"/>
+			<input id="submit" type="submit" name="login" value="a"/>
 			
 			<input type="hidden" name="token" value="<?=$token?>"/>
 		</div>
