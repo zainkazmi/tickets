@@ -9,15 +9,6 @@ if($search->didSearch()){
 else{
     echo "Wrong page";
 }?>
-<?php
-       /*                 if ($result->num_rows > 0) {
-                            // output data of each row
-                            while($row = $result->fetch_assoc()) {
-                                echo "<span>$".$row['price']."</span><br/>";
-                                echo "<span class='subheading'>".$row['Name']. ", ". $row['District']." <br/>".$row['CountryCode']."</span>";
-                            }
-                        }*/
-                        ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -49,7 +40,7 @@ else{
             if ($result->num_rows > 0) {
                 while($row = $result->fetch_assoc()) {
                 ?>
-                <div id="each-company" class="listitem" style="border:1px solid grey; padding:10px;     display:inline-block">
+                <div id="each-company" class="listitem" style="border:1px solid grey; display:inline-block">
                     <div id="company-name" style="">
                         <h3><a href="company.php">Ontario Traffic Tickets (OTT)</a></h3>
                     </div>
