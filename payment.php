@@ -97,8 +97,7 @@
 				</div>
 				
 				<div class="block">
-	  <div id="gblHeaderCCReq" style="display:"><h2 id="ccHeaderSS" class="visa" style="float:left;color:black">Enter Your Billing Address <span style="font-size:12px;font-weight:normal;color:#4F4F4F">(as it appears on your credit card statement)</span></h2>
-	  </div>
+				<h2 id="ccHeaderSS" class="visa" style="color:black">Enter Your Billing Address <span style="font-size:12px;font-weight:normal;color:#4F4F4F">(as it appears on your credit card statement)</span></h2>
 		
 		       
 				   <table class="contract-payment-info">
