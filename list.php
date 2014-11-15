@@ -70,7 +70,7 @@ echo "alert('hi')";?>
                                         <span class="listitem_price_unit">/ticket</span>
                                     </a>
                                 </span>
-                                <button type="button" class="listitem_choose" choosebutton="true">Choose</button>
+                               <a href="ticketInfo.php"> <button type="button" class="listitem_choose" choosebutton="true">Choose</button></a>
                         </div> <!-- listitem_price_group -->
                     </div>
                     </div>

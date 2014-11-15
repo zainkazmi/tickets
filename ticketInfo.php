@@ -98,7 +98,7 @@ session_start();
 
 				<input type="text" placeHolder="DateOfService"/>
 			</div>
-			<button type="button" id="signMeIn" style="margin-top:90px; right:0px; margin-left:70%" href="list.php" class="sign-button">Next</button>
+			<a href="payment.php"><button type="button" id="signMeIn" style="margin-top:90px; right:0px; margin-left:70%" class="sign-button">Next</button></a>
 		</div>
 	</div>
 </body>
