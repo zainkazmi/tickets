@@ -32,8 +32,8 @@ session_start();
                         <span>1234 The Queensway, Etobicoke, ON</span>
                     </div>
                     <div class="listitem_stars listitem_stars_2.5" style="float:none;">
-                            <span class="listitem_stars_desc"></span>
-                        </div>
+                        <span class="listitem_stars_desc"></span>
+                    </div>
                 </div>
             </div>
             <div class="detailsSeparator"><!-- Separator htl dtl 1--></div>
