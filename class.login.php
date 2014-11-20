@@ -63,7 +63,7 @@ class Login
 	public function verifyDatabase(){
 		$servername = "localhost";
 		$username = "root";
-		$password = "";
+		$password = "root";
 		$db = "tickets";
 
 		// Create connection

@@ -45,7 +45,7 @@ class Search
 	public function conn(){
 		$servername = "localhost";
 		$username = "root";
-		$password = "";
+		$password = "root";
 		$db = "tickets";
 		// Create connection
 		return new mysqli($servername, $username, $password,$db);

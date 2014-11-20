@@ -1,5 +1,4 @@
 <?php
-    //include 'header.php';
     session_start();
 
     if(isset($_POST['search'])){
@@ -7,18 +6,19 @@
         $search = new Search();
         if($search->didSearch()){
             header('location:list.php');
+            session_regenerate_id(true);
         }else{
             $search->showErrors();
         }
-    }
-
-    include ('./class.login.php');
-    $login = new Login();
-    if($login->isLoggedIn2()){
-        echo "Members Area";
-    }
-    else{
-        echo "Wrong Page";
+    } else{
+        include ('./class.login.php');
+        $login = new Login();
+        if($login->isLoggedIn2()){
+            echo "Members Area";
+        }
+        else{
+            echo "Wrong Page";
+        }
     }
 
     
