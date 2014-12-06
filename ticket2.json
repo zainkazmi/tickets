@@ -1,0 +1,23 @@
+{
+  "ticketNumber": "AB6194500",
+  "status": "Not-started",
+  "dateCreated": "11/04/2014 6:00AM",
+  "lastModified": "N/A",
+  "assignedTo": "John Law Assosiates",
+  "pricePaid": "N/A",
+  "lawyerPhone": "N/A",
+  "lawyerEmail": "N/A",
+  "dateOfIssue": "10/05/2014",
+  "ticketType": "Traffic",
+  "cityOfIssue": "Missisuaga",
+  "offenceNumber": "XX13777",
+  "offenceAmount": "CAD 85.00",
+  "offenceDetails": "Red Light violation.",
+  "driversName": "Michael Kane",
+  "dob": "03/25/1987",
+  "licenseNumber": "99-11-234",
+  "email": "mkane@google.com",
+  "phone": "647-500-8511",
+  "notes": "Need This sorted out before January",
+  "comments": []
+}

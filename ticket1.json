@@ -1,0 +1,36 @@
+{
+  "ticketNumber": "AB6194582",
+  "status": "In-progress",
+  "dateCreated": "11/01/2014 8:00AM",
+  "lastModified": "11/01/2014 8:00AM",
+  "assignedTo": "Bart Law Associates",
+  "pricePaid": "CAD 50.00",
+  "lawyerPhone": "647-382-0561",
+  "lawyerEmail": "bart@law.com",
+  "dateOfIssue": "10/01/2014",
+  "ticketType": "Speeding",
+  "cityOfIssue": "Toronto",
+  "offenceNumber": "XX13456",
+  "offenceAmount": "CAD 75.00",
+  "offenceDetails": "Going 15km/h over speed limit",
+  "driversName": "Michael Kane",
+  "dob": "03/25/1987",
+  "licenseNumber": "99-11-234",
+  "email": "mkane@google.com",
+  "phone": "647-500-8511",
+  "notes": "Please contact me if you need more details on my email",
+  "comments": [
+    {
+      "time": "11/01/2014 9:00AM",
+      "comment": "Your case is being processed, we will email you as soon as possible."
+    },
+    {
+      "time": "10/31/2014 9:00AM",
+      "comment": "Your case has been picked up."
+    },
+    {
+      "time": "10/31/2014 9:00AM",
+      "comment": "Mohib"
+    }
+  ]
+}

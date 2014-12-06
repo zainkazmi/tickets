@@ -4,14 +4,20 @@
 $(document).ready(function (){
 
 
-    link = 'http://private-9992f-tickets8.apiary-mock.com/ticket/1';
-    $.ajax({
-        type: "GET",
-        url: link,
-        dataType: "json",
-        async: false
-    })
-        .done(function(json){
+
+
+        /*$.ajax({
+         type: "GET",
+         url: link,
+         dataType: "json",
+         async: false
+         })*/
+        $.getJSON('ticket1.json', function(json){
+
+
+
+
+        //.done(function(json){
             //console.log(json.ticketNumber)
 
             //Ticket details update

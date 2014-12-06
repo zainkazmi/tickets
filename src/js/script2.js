@@ -18,8 +18,9 @@ $(document).ready(
                                       id = $(this).attr('id');
                                       link = $(this).attr('data');
 
-                                      $.ajax({type: "GET", url: link, dataType: "json", async: false}).done(function(json){
+                                      //$.ajax({type: "GET", url: link, dataType: "json", async: false}).done(function(json){
 
+                                              $.getJSON(link, function(json){
 
 
 
