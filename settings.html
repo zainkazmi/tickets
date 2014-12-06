@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="google" value="notranslate">
+
+    <title>VAKIL | Settings</title>
+
+    <!-- Bootcards CSS files for desktop, iOS and Android -->
+    <!-- You'll only need to load one of these (depending on the device you're using) in production -->
+    <!-- (these include the required Bootstrap CSS) -->
+    <!--<link href="css/bootcards-iOS.min.css" rel="stylesheet">-->
+    <link href="css/bootcards-desktop.min.css" rel="stylesheet">
+    <link href="css/customStyle.css" rel="stylesheet">
+    <!--<link href="css/bootcards-android.min.css" rel="stylesheet">-->
+
+    <!-- Font awesome -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+</head>
+
+<body>
+
+<!-- fixed top navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <button type="button" class="btn btn-default btn-back pull-left hidden" onclick="history.back()">
+            <i class="fa fa-lg fa-chevron-left"></i>
+            <span>Back</span>
+        </button>
+        <!-- menu button to show/ hide the off canvas menu -->
+        <button type="button" class="btn btn-default btn-menu pull-left" data-toggle="offcanvas">
+            <i class="fa fa-lg fa-bars"></i>
+            <span>Menu</span>
+        </button>
+
+        <a id ="Brand" class="navbar-brand" title="Bootcards Starter" href="/" style="font-size: 28px"><strong>VAK<span
+                style="color: red">I</span>L</strong></a>
+
+        <!--right aligned button-->
+        <!--<button type="button" class="btn btn-warning navbar-right">
+            <i class="fa fa-lg fa-refresh"></i>
+            <span>Logout</span>
+        </button>-->
+
+        <a id="navLog2" class="btn btn-link btn-m navbar-right" href="#" style = "line-height: 2.5">
+            <i class="fa fa-power-off"></i>
+            <span>Logout</span>
+
+        </a>
+
+
+        <a id ="navLog1" class="btn btn-link btn-m navbar-right" href="#" style = "line-height: 2.5">
+            <img src="images/John.jpg" class="img-circle pull-left" style="height: 35px; width:35px"> </img>
+            <span style="padding-left: 5px;">Welcome, John</span>
+        </a>
+
+        <!--navbar menu options: shown on desktop only -->
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a id="navLabel1"   href="inbox2.html">
+                        <i class="fa fa-lg fa-inbox"></i> Inbox
+                    </a>
+                </li>
+                <li>
+                    <a id="navLabel2"  href="settings.html">
+                        <i class="fa fa-lg fa-user"></i> Account
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- slide in off canvas menu (mobile only) -->
+<nav class="navmenu offcanvas offcanvas-left">
+    <ul class="nav">
+        <li>
+            <a href="">
+                <i class="fa fa-lg fa-envelope"></i>Inbox
+            </a>
+        </li>
+        <li class="active">
+            <a href="starter-template.html">
+                <i class="fa fa-lg fa-gears"></i>Settings
+            </a>
+        </li>
+        <li>
+            <a href="az-picker.html">
+                <i class="fa fa-lg fa-power-off"></i>Logout
+            </a>
+        </li>
+    </ul>
+</nav>
+<!--nav-->
+
+<div class="container bootcards-container" id="main">
+
+    <!-- This is where you come in... -->
+    <!-- I've added some sample data below so you can get a feel for the required markup -->
+
+    <div class="row">
+
+
+        <div class="col-sm-10 col-sm-offset-0 bootcards-cards">
+
+
+            <div class="col-sm-6 col-sm-offset-4 bootcards-cards">
+                <div class="panel panel-default">
+                    <div class="panel-heading clearfix">
+                        <h3 class="panel-title pull-left">Settings</h3>
+                        <a href="/settings/edit" class="btn btn-primary pull-right" data-pjax="#main">
+                            <i class="fa fa-pencil"></i>
+                            Edit
+                        </a>
+                    </div>
+
+                    <div class="list-group">
+                        <div class="list-group-item">
+                            <p class="list-group-item-text">Username</p>
+                            <h4 class="list-group-item-heading">username</h4>
+                        </div>
+                        <div class="list-group-item">
+                            <p class="list-group-item-text">Password</p>
+                            <h4 class="list-group-item-heading">••••••••</h4>
+                        </div>
+                        <div class="list-group-item">
+                            <p class="list-group-item-text">Type</p>
+                            <h4 class="list-group-item-heading">Customer</h4>
+                        </div>
+                    </div>
+
+                    <div class="panel-footer">
+                        <small class="pull-left">Built with Bootcards - Base Card</small>
+                        <a class="btn btn-link btn-xs pull-right" href="/snippets/base-card-form" data-toggle="modal" data-target="#docsModal">
+                            View Source</a>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+    </div>
+    <!--row-->
+
+
+</div>
+<!--container-->
+
+<!-- fixed tabbed footer -->
+<!--<div class="navbar navbar-default navbar-fixed-bottom">
+
+    <div class="container">
+
+        <div class="bootcards-desktop-footer clearfix">
+            <p class="pull-left">Tickets Inc.</p>
+        </div>
+
+        <div class="btn-group">
+            <a href="#" class="btn btn-default">
+                <i class="fa fa-2x fa-envelope"></i>Inbox
+            </a>
+            <a href="starter-template.html" class="btn btn-default active">
+                <i class="fa fa-2x fa-gears"></i>Settings
+            </a>
+        </div>
+    </div>
+
+</div>-->
+<!--footer-->
+
+<!-- Bootstrap & jQuery core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+<!-- Bootcards JS -->
+<script src="src/js/bootcards.js"></script>
+
+
+<!--recommended: FTLabs FastClick library-->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.2/fastclick.min.js"></script>
+
+<script type="text/javascript">
+
+    /*
+     * Initialize Bootcards.
+     *
+     * Parameters:
+     * - offCanvasBackdrop (boolean): show a backdrop when the offcanvas is shown
+     * - offCanvasHideOnMainClick (boolean): hide the offcanvas menu on clicking outside the off canvas
+     * - enableTabletPortraitMode (boolean): enable single pane mode for tablets in portraitmode
+     * - disableRubberBanding (boolean): disable the iOS rubber banding effect
+     * - disableBreakoutSelector (boolean) : for iOS apps that are added to the home screen:
+     jQuery selector to target links for which a fix should be added to not
+     allow those links to break out of fullscreen mode.
+     */
+    bootcards.init({
+        offCanvasBackdrop: true,
+        offCanvasHideOnMainClick: true,
+        enableTabletPortraitMode: true,
+        disableRubberBanding: true
+    });
+
+    //enable FastClick
+    window.addEventListener('load', function () {
+        FastClick.attach(document.body);
+    }, false);
+
+</script>
+
+
+</body>
+</html>

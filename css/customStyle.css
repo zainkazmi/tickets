@@ -1,0 +1,31 @@
+body {
+
+  background:#ffffff ;
+
+
+}
+
+#Brand, #navLog1, #navLog2, #navLabel1, #navLabel2, #Ticdepan, #Compan
+{
+
+    color: white;
+}
+
+
+.navbar, #searchButton, #Ticdepan, #Compan
+{
+
+    background: #1E8BC3;
+
+
+}
+
+.span
+{
+
+    color:#1E8BC3;
+    line-height: 2.6;
+    font-weight: bold;
+
+}
+

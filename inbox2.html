@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="google" value="notranslate">
+
+    <title>VAKIL | Inbox</title>
+
+    <!-- Bootcards CSS files for desktop, iOS and Android -->
+
+    <link href="css/bootcards-desktop.min.css" rel="stylesheet">
+    <link href="css/customStyle.css" rel="stylesheet">
+
+    <!-- Font awesome -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+</head>
+
+<body>
+
+
+<!-- fixed top navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <button type="button" class="btn btn-default btn-back pull-left hidden" onclick="history.back()">
+            <i class="fa fa-lg fa-chevron-left"></i>
+            <span>Back</span>
+        </button>
+        <!-- menu button to show/ hide the off canvas menu -->
+        <button type="button" class="btn btn-default btn-menu pull-left" data-toggle="offcanvas">
+            <i class="fa fa-lg fa-bars"></i>
+            <span>Menu</span>
+        </button>
+
+        <a id ="Brand" class="navbar-brand" title="Bootcards Starter" href="/" style="font-size: 28px"><strong>VAK<span
+                style="color: red">I</span>L</strong></a>
+
+        <!--right aligned button-->
+        <!--<button type="button" class="btn btn-warning navbar-right">
+            <i class="fa fa-lg fa-refresh"></i>
+            <span>Logout</span>
+        </button>-->
+
+        <a id="navLog2" class="btn btn-link btn-m navbar-right" href="#" style = "line-height: 2.5">
+            <i class="fa fa-power-off"></i>
+            <span>Logout</span>
+
+        </a>
+
+
+        <a id ="navLog1" class="btn btn-link btn-m navbar-right" href="#" style = "line-height: 2.5">
+            <img src="images/John.jpg" class="img-circle pull-left" style="height: 35px; width:35px"> </img>
+            <span style="padding-left: 5px;">Welcome, John</span>
+        </a>
+
+        <!--navbar menu options: shown on desktop only -->
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a id="navLabel1"   href="inbox2.html">
+                        <i class="fa fa-lg fa-inbox"></i> Inbox
+                    </a>
+                </li>
+                <li>
+                    <a id="navLabel2"  href="settings.html">
+                        <i class="fa fa-lg fa-user"></i> Account
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- slide in off canvas menu (mobile only) -->
+<nav class="navmenu offcanvas offcanvas-left">
+    <ul class="nav">
+        <li>
+            <a href="">
+                <i class="fa fa-lg fa-envelope"></i>Inbox
+            </a>
+        </li>
+        <li class="active">
+            <a href="starter-template.html">
+                <i class="fa fa-lg fa-gears"></i>Settings
+            </a>
+        </li>
+        <li>
+            <a href="az-picker.html">
+                <i class="fa fa-lg fa-power-off"></i>Logout
+            </a>
+        </li>
+    </ul>
+</nav>
+<!--nav-->
+
+<!-- The container for tickets-->
+<div class="container bootcards-container push-right">
+
+    <div class="row">
+
+        <div id="listTick" class="col-lg-12 bootcards-list" data-title="Tickets">
+
+
+            <div class="panel panel-default">
+
+                <!--Search Panel-->
+                <div class="panel-body">
+                    <div class="search-form">
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Search Tickets...">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <a id="searchButton" class="btn btn-primary btn-block" href="#" onclick="bootcards.hideOffCanvasMenu()">
+                                    <span>Search</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--the list of tickets-->
+                <div class="list-group">
+
+                    <a id ="zee" class="list-group-item" data="http://private-9992f-tickets8.apiary-mock.com/ticket/1">
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <img src="images/speeding.png" class="img-rounded pull-left"/>
+                                <p class="list-group-item-heading"><span class="span">Ticket#:</span> AB6194582</p>
+                            </div>
+                            <div class="col-xs-3">
+                                <p class="list-group-item-text"><span class="span">Assigned to:</span> Bart Law Associates</p>
+                            </div>
+                            <div class="col-xs-3">
+                                <p class="list-group-item-text"><span class="span">Last Modified:</span> 11/17/2014 9:00AM</p>
+                            </div>
+                            <div class="col-xs-3">
+                                <p class="list-group-item-text"><span class="span">Status:</span> In-progress</p>
+                            </div>
+                        </div>
+                    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <a class="list-group-item" id='zain' data="http://private-9992f-tickets8.apiary-mock.com/ticket/2">
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <img src="images/traffic.png" class="img-rounded pull-left"/>
+                                <p class="list-group-item-heading"><span class="span">Ticket#:</span> AB6194500</p>
+                            </div>
+                            <div class="col-xs-3">
+                                <p class="list-group-item-text"><span class="span">Assigned to:</span> John Law Associates</p>
+                            </div>
+                            <div class="col-xs-3">
+                                <p class="list-group-item-text"><span class="span">Last Modified:</span> N/A</p>
+                            </div>
+                            <div class="col-xs-3">
+                                <p class="list-group-item-text"><span class="span">Status:</span> Not-started</p>
+                            </div>
+                        </div>
+                    </a>
+
+
+
+
+
+
+
+                </div>
+
+
+                <!--footer-->
+                <div class="panel-footer">
+                    <small class="pull-left">Last Updated: <span id="lastUpdateFooter">11/17/2014 9:00AM</span></small>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+</div>
+
+
+
+
+<!-- fixed tabbed footer -->
+<!--<div class="navbar navbar-default navbar-fixed-bottom">
+
+    <div class="container">
+
+        <div class="bootcards-desktop-footer clearfix">
+            <p class="pull-left" style="color:#ffffff">Tickets Inc.</p>
+        </div>
+
+        <div class="btn-group">
+            <a href="#" class="btn btn-default">
+                <i class="fa fa-2x fa-envelope"></i>Inbox
+            </a>
+            <a href="starter-template.html" class="btn btn-default active">
+                <i class="fa fa-2x fa-gears"></i>Settings
+            </a>
+        </div>
+    </div>
+
+</div>-->
+<!--footer-->
+
+
+
+
+
+
+
+
+
+<!-- Bootstrap & jQuery core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+<!-- Bootcards JS -->
+<script src="src/js/bootcards.js"></script>
+<script src="src/js/script2.js"></script>
+
+<!--recommended: FTLabs FastClick library-->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.2/fastclick.min.js"></script>
+
+<script type="text/javascript">
+
+    /*
+     * Initialize Bootcards.
+     *
+     * Parameters:
+     * - offCanvasBackdrop (boolean): show a backdrop when the offcanvas is shown
+     * - offCanvasHideOnMainClick (boolean): hide the offcanvas menu on clicking outside the off canvas
+     * - enableTabletPortraitMode (boolean): enable single pane mode for tablets in portraitmode
+     * - disableRubberBanding (boolean): disable the iOS rubber banding effect
+     * - disableBreakoutSelector (boolean) : for iOS apps that are added to the home screen:
+     jQuery selector to target links for which a fix should be added to not
+     allow those links to break out of fullscreen mode.
+     */
+    bootcards.init({
+        offCanvasBackdrop: true,
+        offCanvasHideOnMainClick: true,
+        enableTabletPortraitMode: true,
+        disableRubberBanding: true
+    });
+
+    //enable FastClick
+    window.addEventListener('load', function () {
+        FastClick.attach(document.body);
+    }, false);
+
+</script>
+
+
+
+</body>
+
+
+
+
+
+</html>

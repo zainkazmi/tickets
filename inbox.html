@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="google" value="notranslate">
+
+    <title>VAKIL | Inbox</title>
+
+    <!-- Bootcards CSS files for desktop, iOS and Android -->
+    <!-- You'll only need to load one of these (depending on the device you're using) in production -->
+    <!-- (these include the required Bootstrap CSS) -->
+    <!--<link href="css/bootcards-iOS.min.css" rel="stylesheet">-->
+    <link href="css/bootcards-desktop.min.css" rel="stylesheet">
+    <link href="css/customStyle.css" rel="stylesheet">
+    <!--<link href="css/bootcards-android.min.css" rel="stylesheet">-->
+
+    <!-- Font awesome -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+</head>
+
+<body>
+
+<!-- fixed top navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <button type="button" class="btn btn-default btn-back pull-left hidden" onclick="history.back()">
+            <i class="fa fa-lg fa-chevron-left"></i>
+            <span>Back</span>
+        </button>
+        <!-- menu button to show/ hide the off canvas menu -->
+        <button type="button" class="btn btn-default btn-menu pull-left" data-toggle="offcanvas">
+            <i class="fa fa-lg fa-bars"></i>
+            <span>Menu</span>
+        </button>
+
+        <a id ="Brand" class="navbar-brand" title="Bootcards Starter" href="/" style="font-size: 28px"><strong>VAK<span
+                style="color: red">I</span>L</strong></a>
+
+        <!--right aligned button-->
+        <!--<button type="button" class="btn btn-warning navbar-right">
+            <i class="fa fa-lg fa-refresh"></i>
+            <span>Logout</span>
+        </button>-->
+
+        <a id="navLog2" class="btn btn-link btn-m navbar-right" href="#" style = "line-height: 2.5">
+            <i class="fa fa-power-off"></i>
+            <span>Logout</span>
+
+        </a>
+
+
+        <a id ="navLog1" class="btn btn-link btn-m navbar-right" href="#" style = "line-height: 2.5">
+            <img src="images/John.jpg" class="img-circle pull-left" style="height: 35px; width:35px"> </img>
+            <span style="padding-left: 5px;">Welcome, John</span>
+        </a>
+
+        <!--navbar menu options: shown on desktop only -->
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a id="navLabel1"   href="inbox.html">
+                        <i class="fa fa-lg fa-inbox"></i> Inbox
+                    </a>
+                </li>
+                <li>
+                    <a id="navLabel2"  href="settings.html">
+                        <i class="fa fa-lg fa-user"></i> Account
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- slide in off canvas menu (mobile only) -->
+<nav class="navmenu offcanvas offcanvas-left">
+    <ul class="nav">
+        <li>
+            <a href="">
+                <i class="fa fa-lg fa-envelope"></i>Inbox
+            </a>
+        </li>
+        <li class="active">
+            <a href="starter-template.html">
+                <i class="fa fa-lg fa-gears"></i>Settings
+            </a>
+        </li>
+        <li>
+            <a href="az-picker.html">
+                <i class="fa fa-lg fa-power-off"></i>Logout
+            </a>
+        </li>
+    </ul>
+</nav>
+<!--nav-->
+
+
+
+
+
+
+<div class="container bootcards-container push-right">
+
+    <!-- This is where you come in... -->
+    <!-- I've added some sample data below so you can get a feel for the required markup -->
+
+    <div class="row">
+
+
+
+
+
+
+        <!-- left list column -->
+        <div id="list12" class="col-sm-7 bootcards-list" data-title="Contacts">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="search-form">
+                        <div class="row">
+                            <div class="col-xs-9">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Search Tickets...">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                            </div>
+                            <div class="col-xs-3">
+                                <a class="btn btn-primary btn-block" href="#" onclick="bootcards.hideOffCanvasMenu()">
+                                    <span>Search</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--panel body-->
+
+                <div class="list-group">
+
+                    <!-- list of sample data -->
+
+                    <a class="list-group-item" data="http://private-9992f-tickets8.apiary-mock.com/ticket/1">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <img src="images/speeding.png" class="img-rounded pull-left"/>
+                                <h4 class="list-group-item-heading">Ticket#: AB6194582</h4>
+
+                                <p class="list-group-item-text">Assigned to: <em>Bart Law Associates</em></p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p class="list-group-item-text">Status: In-progress</p>
+
+                                <p class="list-group-item-text">Last Modified: 11/17/2014 9:00AM</p>
+                            </div>
+                        </div>
+                    </a>
+
+
+                   <a class="list-group-item" data="http://private-9992f-tickets8.apiary-mock.com/ticket/2">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <img src="images/traffic.png" class="img-rounded pull-left"/>
+                                <h4 class="list-group-item-heading">Ticket#: AB6194500</h4>
+
+                                <p class="list-group-item-text">Assigned to: John Law Associates</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p class="list-group-item-text">Status: Not-started</p>
+
+                                <p class="list-group-item-text">Last Modified: N/A</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="list-group-item">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <img src="images/speeding.png" class="img-rounded pull-left"/>
+                                <h4 class="list-group-item-heading">Ticket#: AB6194599</h4>
+
+                                <p class="list-group-item-text">Assigned to: Law and Law Firm</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p class="list-group-item-text">Status: Completed</p>
+
+                                <p class="list-group-item-text">Last Modified: 11/16/2014 10:00AM</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <img src="images/filing.png" class="img-rounded pull-left"/>
+                                <h4 class="list-group-item-heading">Ticket#: AB6194999</h4>
+
+                                <p class="list-group-item-text">Assigned to: X-Coppers Inc</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p class="list-group-item-text">Status: Not-started</p>
+
+                                <p class="list-group-item-text">Last Modified: N/A</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <img src="images/traffic.png" class="img-rounded pull-left"/>
+                                <h4 class="list-group-item-heading">Ticket#: AB6194511</h4>
+
+                                <p class="list-group-item-text">Assigned to: Jared Law Firm</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p class="list-group-item-text">Status: In-progress</p>
+
+                                <p class="list-group-item-text">Last Modified: 11/16/2014 11:00AM</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <img src="images/parking.png" class="img-rounded pull-left"/>
+                                <h4 class="list-group-item-heading">Ticket#: AB6194599</h4>
+
+                                <p class="list-group-item-text">Assigned to: Law and Law Firm</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p class="list-group-item-text">Status: Completed</p>
+
+                                <p class="list-group-item-text">Last Modified: 11/16/2014 10:00AM</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <img src="images/speeding.png" class="img-rounded pull-left"/>
+                                <h4 class="list-group-item-heading">Ticket#: AB6194999</h4>
+
+                                <p class="list-group-item-text">Assigned to: X-Coppers Inc</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p class="list-group-item-text">Status: Not-started</p>
+
+                                <p class="list-group-item-text">Last Modified: N/A</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <img src="images/parking.png" class="img-rounded pull-left"/>
+                                <h4 class="list-group-item-heading">Ticket#: AB6194511</h4>
+
+                                <p class="list-group-item-text">Assigned to: Jared Law Firm</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p class="list-group-item-text">Status: In-progress</p>
+
+                                <p class="list-group-item-text">Last Modified: 11/16/2014 11:00AM</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <img src="images/traffic.png" class="img-rounded pull-left"/>
+                                <h4 class="list-group-item-heading">Ticket#: AB6194511</h4>
+
+                                <p class="list-group-item-text">Assigned to: Jared Law Firm</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p class="list-group-item-text">Status: In-progress</p>
+
+                                <p class="list-group-item-text">Last Modified: 11/16/2014 11:00AM</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <img src="images/filing.png" class="img-rounded pull-left"/>
+                                <h4 class="list-group-item-heading">Ticket#: AB6194511</h4>
+
+                                <p class="list-group-item-text">Assigned to: Jared Law Firm</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p class="list-group-item-text">Status: In-progress</p>
+
+                                <p class="list-group-item-text">Last Modified: 11/16/2014 11:00AM</p>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <!--list-group-->
+
+                <div class="panel-footer">
+                    <a class="btn btn-link btn-xs pull-right">Next</a>
+                </div>
+            </div>
+            <!--panel-->
+
+        </div>
+        <!--list-->
+
+        <!--list details column-->
+        <div class="col-sm-5 bootcards-cards hidden-xs">
+
+
+            <!--filler card -->
+            <div id="fillerCard">
+
+                <div class="panel panel-default">
+
+                    <div class="panel-heading clearfix">
+                        <h3 class="panel-title pull-left"><strong>Ticket Details</strong></h3>
+                    </div>
+
+                    <div class="list-group">
+
+                        <div class="list-group-item">
+
+                            <p class="list-group-item-text"><em>Click on a ticket, to view the details of that ticket.</em></p>
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+            <!--Filler card-->
+
+            <!--ticket details -->
+            <div id="ticketCard">
+
+                <div class="panel panel-default">
+                    <div class="panel-heading clearfix">
+                        <h3 class="panel-title pull-left"><strong>Ticket Details</strong></h3>
+                    </div>
+                    <div class="list-group">
+
+                        <div class="list-group-item">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <p class="list-group-item-text"><strong>Ticket#: </strong><span id="TN"></span></p>
+                                </div>
+                                <div class="col-sm-6">
+                                    <p class="list-group-item-text"><strong>Status: </strong><span id="ST"></span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="list-group-item">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <p class="list-group-item-text"><strong>Date Created: </strong><span id="DC"></span>
+                                    </p>
+                                </div>
+                                <div class="col-sm-6">
+                                    <p class="list-group-item-text"><strong>Last Modified:</strong><span id="LM"></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="list-group-item">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <p class="list-group-item-text"><strong>Assigned to: </strong><span id="AT"></span>
+                                    </p>
+
+                                    <p class="list-group-item-text"><strong>Phone: </strong><span id="LP"></span></p>
+
+                                    <p class="list-group-item-text"><strong>Email: </strong><a href="/"><span id="LE"></span></a></p>
+                                </div>
+                                <div class="col-sm-6">
+                                    <p class="list-group-item-text"><strong>Price paid: </strong><span id="PP"></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="list-group-item">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <p class="list-group-item-text"><strong>Date of Issue: </strong><span
+                                            id="DOI"></span></p>
+
+                                    <p class="list-group-item-text"><strong>City of Issue: </strong><span
+                                            id="COI"></span></p>
+
+                                </div>
+                                <div class="col-sm-6">
+                                    <p class="list-group-item-text"><strong>Type: </strong><span id="TY"></span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="list-group-item">
+
+
+                            <p class="list-group-item-text"><strong>Offence #: </strong><span id="ON"></span></p>
+
+                            <p class="list-group-item-text"><strong>Offence amount: </strong><span id="OA"></span></p>
+
+                            <p class="list-group-item-text"><strong>Offence details: </strong><span id="OD"></span></p>
+
+
+                        </div>
+
+                        <div class="list-group-item">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <p class="list-group-item-text"><strong>Driver's Name: </strong><span
+                                            id="DN"></span></p>
+
+                                    <p class="list-group-item-text"><strong>License #: </strong><span id="LI"></span>
+                                    </p>
+
+                                    <p class="list-group-item-text"><strong>Email: </strong><span id="EM"></span></p>
+
+                                </div>
+                                <div class="col-sm-6">
+                                    <p class="list-group-item-text"><strong>DOB :</strong><span id="DOB"></span></p>
+
+                                    <p class="list-group-item-text"><strong>Phone:</strong><span id="PH"></span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="list-group-item">
+
+
+                            <p class="list-group-item-text"><strong>Notes: </strong> <em><span id="NO"></span></em></p>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="panel-footer">
+                        <small class="pull-left">Last Updated: <span id="LU"></span></small>
+
+                    </div>
+                </div>
+
+            </div>
+            <!--ticket card-->
+
+            <!--Messages details -->
+            <div id="messageCard">
+
+                <div class="panel panel-default">
+
+                    <div class="panel-heading clearfix">
+                        <h3 class="panel-title pull-left"><strong>Comments</strong></h3>
+                    </div>
+
+                    <div class="list-group" id="comments">
+
+
+                    </div>
+
+                    <div class="panel-footer">
+                        <small class="pull-left">Last Updated: 11/01/2014 8:00AM</small>
+                    </div>
+
+                </div>
+
+            </div>
+            <!--Message card-->
+
+
+        </div>
+        <!--list-details-->
+
+    </div>
+    <!--row-->
+
+
+</div>
+<!--container-->
+
+<!-- fixed tabbed footer -->
+<div class="navbar navbar-default navbar-fixed-bottom">
+
+    <div class="container">
+
+        <div class="bootcards-desktop-footer clearfix">
+            <p class="pull-left">Tickets Inc.</p>
+        </div>
+
+        <div class="btn-group">
+            <a href="#" class="btn btn-default">
+                <i class="fa fa-2x fa-envelope"></i>Inbox
+            </a>
+            <a href="starter-template.html" class="btn btn-default active">
+                <i class="fa fa-2x fa-gears"></i>Settings
+            </a>
+        </div>
+    </div>
+
+</div>
+<!--footer-->
+
+<!-- Bootstrap & jQuery core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+<!-- Bootcards JS -->
+<script src="src/js/bootcards.js"></script>
+<script src="src/js/script.js"></script>
+
+<!--recommended: FTLabs FastClick library-->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.2/fastclick.min.js"></script>
+
+<script type="text/javascript">
+
+    /*
+     * Initialize Bootcards.
+     *
+     * Parameters:
+     * - offCanvasBackdrop (boolean): show a backdrop when the offcanvas is shown
+     * - offCanvasHideOnMainClick (boolean): hide the offcanvas menu on clicking outside the off canvas
+     * - enableTabletPortraitMode (boolean): enable single pane mode for tablets in portraitmode
+     * - disableRubberBanding (boolean): disable the iOS rubber banding effect
+     * - disableBreakoutSelector (boolean) : for iOS apps that are added to the home screen:
+     jQuery selector to target links for which a fix should be added to not
+     allow those links to break out of fullscreen mode.
+     */
+    bootcards.init({
+        offCanvasBackdrop: true,
+        offCanvasHideOnMainClick: true,
+        enableTabletPortraitMode: true,
+        disableRubberBanding: true
+    });
+
+    //enable FastClick
+    window.addEventListener('load', function () {
+        FastClick.attach(document.body);
+    }, false);
+
+</script>
+</body>
+</html>
