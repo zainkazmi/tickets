@@ -1,0 +1,36 @@
+{ 
+	"OTT" : 
+		{
+			"name"		:	"ott",
+      		"src"  		:	"http://ontariospeeding.com/wp-content/uploads/2013/12/Speeding-Tickets.jpg", 
+      		"title" 	: 	"Ontario Traffic Tickets (OTT)",
+      		"star"		:	"listitem_stars_3.0",
+      		"star_text"	:	"3-Star",
+      		"rating"	: 	"7.4",
+      		"guest"		:	"314",
+      		"review"	:	"Good",
+      		"address"	:	"1234 The Queensway Etobicoke, Ontario M8Z 1S2",
+      		"price"		: 	"129",
+      		"info"		:	"OTT Legal Services has some of the most qualified and experienced paralegals in the traffic ticket industry. Our agents are former Police officers, Detectives, Officers with the Ministry of Transportation and Paralegals, all licenced by the Law Society of Upper Canada.",
+      		"iframe"	:	"https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=ott+legal+1234+The+Queensway+toronto&amp;aq=&amp;sll=43.663189,-79.728275&amp;sspn=0.009352,0.010922&amp;ie=UTF8&amp;hq=ott+legal&amp;hnear=1234+The+Queensway,+Toronto,+Toronto+Division,+Ontario+M8Z+1S2,+Canada&amp;t=m&amp;ll=43.621739,-79.524514&amp;spn=0.006295,0.006295&amp;output=embed"
+
+   		},
+   	"XCopper" : 
+		{
+			"name"		:	"xcopper",
+      		"src"  		:	"http://www.xcopper.com/images/xcopper_logo.png", 
+      		"title" 	: 	"X-Copper",
+      		"star"		:	"listitem_stars_4.0",
+      		"star_text"	:	"4-Star",
+      		"rating"	: 	"8.2",
+      		"review"	:	"Awesome",
+      		"guest"		:	"122",
+      		"address"	:	"245 Fairview Mall Dr Suite 301 North York, Ontario M2J 4T1",
+      		"price"		: 	"162",
+      		"info"		:	"X-Copper provides effective and affordable legal representation to people that have been charged with traffic tickets, criminal charges, or commercial vehicle offences. Our team of professionals are well respected and known by judges and prosecutors for their expertise, reputation, persistence and results. We use our expert knowledge of the laws, court procedures and methods of law enforcement to fight for the best possible outcome for our clients.",
+      		"iframe"	:	"https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=ott+legal+1234+The+Queensway+toronto&amp;aq=&amp;sll=43.663189,-79.728275&amp;sspn=0.009352,0.010922&amp;ie=UTF8&amp;hq=ott+legal&amp;hnear=1234+The+Queensway,+Toronto,+Toronto+Division,+Ontario+M8Z+1S2,+Canada&amp;t=m&amp;ll=43.621739,-79.524514&amp;spn=0.006295,0.006295&amp;output=embed"
+
+   		}
+
+       
+}    

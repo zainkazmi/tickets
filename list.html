@@ -1,0 +1,204 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Static Top Navbar Example for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/datepicker.css" rel="stylesheet">
+    <link href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/searchResults.css" rel="stylesheet">
+    <link href="http://www.priceline.com/hotel/content/css/list/listitem.css?v=20141114" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  	<style type="text/css">
+  	.nav-tabs>li{
+	  	background:transparent;
+  	}
+  	.nav-tabs>li>a{
+  		font-size:14px;
+  	}
+  	.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus{
+  		background:transparent;
+  		border-bottom-color:#fafafa;
+  	}
+	</style>
+   </head>
+
+  <body>
+
+    <div id="main-nav"></div>    	
+
+    <div class="container" style="background-color:#fafafa; padding:20px;">
+    	<div id="search-info">
+    		<input name="city" id="city" class="form-control" type="text" placeHolder="City, Province, or Canada Postal Code" style="display:inline-block; font-size:18px; height:auto; font-weight:normal; width:33%; margin-right:20px" value="Toronto, ON Canada"/>
+    		<input id="datepicker" class="form-control " style="display:inline-block; height:auto; margin-right:20px; font-size:18px; width:auto; font-weight:normal" name="speedInfractionDate" value="11/13/2014" >
+    		<select class="form-control header-font" style="height:39px; font-size:16px; width:20%; display:inline-block; font-size:18px; font-weight:normal" name="speedLimit">
+                <option value="1">0-15km over</option>
+                <option value="2">16-29km over</option>
+                <option value="3">30-49km over</option>
+                <option value="4">50+ km over</option>
+            </select>
+            <input type="submit" onclick="window.location('list.html')" class="form-controlbtn btn btn-lg btn-primary" style="float:right; padding:7px 12px; display:inline-block; width:20%; " value="Update Search" name="search">
+
+        </div>
+        <hgroup class="mb20">
+			<h1>Search Results</h1>
+			<h2 class="lead"><strong class="text-danger">3</strong> results were found for the search for <strong class="text-danger">Lorem</strong></h2>								
+		</hgroup>
+		<section class="col-xs-12 col-sm-6 col-md-12">
+			<!--<article class="search-result row">
+				<div class="col-xs-12 col-sm-12 col-md-3">
+					<a href="#" title="Lorem ipsum" class="thumbnail"><img src="http://ontariospeeding.com/wp-content/uploads/2013/12/Speeding-Tickets.jpg" alt="Lorem ipsum" /></a>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-7 excerpet">
+					<h3><a href="#" title="">Ontario Traffic Tickets (OTT)</a></h3>
+					<div class="listitem_ratings_group">
+						<div class="listitem_stars listitem_stars_3.0" style="padding-right:100px; margin-right:15px; border-right: 1px solid #ccc; ">
+							<span class="listitem_stars_desc">3-Star</span>
+						</div>
+						<div class="listitem_ratings_review">
+							<span class="listitem_ratings_review_adj listitem_ratings_review_good">Good</span>
+							<span class="listitem_ratings_review_score">7.4</span>
+							out of 10 from <a class="listitem_ratings_review_link"> 314 guest reviews</a>
+						</div>
+					</div>
+					<span class="listitem_location">1234 The Queensway Etobicoke, Ontario M8Z 1S2</span>					
+					<ul class="nav nav-tabs" role="tablist">
+					    <li role="presentation"><a href="#details" aria-controls="speeding" role="tab" data-toggle="tab">Details</a></li>
+					    <li role="presentation"><a href="#map" aria-controls="parking" role="tab" data-toggle="tab">Map</a></li>
+					    <li role="presentation"><a href="#rating" aria-controls="filing" role="tab" data-toggle="tab">Rating</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-2 excerpet">
+					<h1 style="font-size:54px;"><a href="#" title="">$129</a></h1>
+				</div>
+				<span class="clearfix borda"></span>
+				<div class="tab-content">
+		  			<div role="tabpanel" class="tab-pane" id="details">
+		  				<div class="col-xs-12 col-sm-12 col-md-3" style-"display:block">
+							<img style="width:45%;" src="http://ontariotraffictickets.com/wp-content/uploads/2013/06/chris-conway.jpg">
+							<img style="width:45%;" src="http://ontariotraffictickets.com/wp-content/uploads/2013/06/marcello-morra.jpg">
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-9 excerpet">
+							<li>Legal Consultation</li>
+	    					<li>Ticket Analysis</li>
+	    					<li>Plea bargain negociations</li><br/>
+							<p>OTT Legal Services has some of the most qualified and experienced paralegals in the traffic ticket industry. Our agents are former Police officers, Detectives, Officers with the Ministry of Transportation and Paralegals, all licenced by the Law Society of Upper Canada.</p>
+							<a class="listitem_details_reviews_close listitem_linkme" onclick='$("#details").hide()'>Close</a>
+						</div>
+          			</div>
+          			<div role="tabpanel" class="tab-pane" id="map">
+		  				<iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=ott+legal+1234+The+Queensway+toronto&amp;aq=&amp;sll=43.663189,-79.728275&amp;sspn=0.009352,0.010922&amp;ie=UTF8&amp;hq=ott+legal&amp;hnear=1234+The+Queensway,+Toronto,+Toronto+Division,+Ontario+M8Z+1S2,+Canada&amp;t=m&amp;ll=43.621739,-79.524514&amp;spn=0.006295,0.006295&amp;output=embed" width="100%" height="10%" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+          			</div>
+          			<div role="tabpanel" class="tab-pane" id="rating">
+		  				<div class="col-xs-12 col-sm-12 col-md-3">
+							Some
+						</div>
+						
+          			</div>
+				</div>
+			</article>-->
+			
+    	</section>
+
+    	
+	</div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    
+    <script>
+    	$('#main-nav').load("nav.html");
+    	$('#myTab a').click(function (e) {
+		  e.preventDefault()
+		  $(this).tab('show')
+		});
+    	var checkout = $('#datepicker').datepicker({ 
+
+    		}).on('changeDate', function(ev) {
+		  		checkout.hide();
+			}).data('datepicker');
+
+    	$(function() {
+		    var availableCity = [
+		      "Toronto, ON Canada", 
+		      "Scarborough, ON Canada",
+		      "Mississauga, ON Canada",
+		      "Brampton, ON Canada",
+		      "Pickering, ON Canada",
+		      "Milton, ON Canada", 
+		      "Waterloo, ON Canada",
+		      "Kitchener, ON Canada",
+		      "Ajax, ON Canada",
+		      "Whitby, ON Canada",
+		      "Oshawa, ON Canada",
+		      "Vaughan, ON Canada",
+		      "Markham, ON Canada",
+		      "Etobicoke, ON Canada",
+		      "Richmond Hill, ON Canada",
+		      "Barrie, ON Canada",
+		      "Sudbury, ON Canada",
+		      "Hamilton, ON Canada",
+		      "Windsor, ON Canada",
+		      "Niagara Falls, ON Canada",
+		      "New Market, ON Canada",
+		      "Peterborough, ON Canada"
+		    ];
+		    $( "#city" ).autocomplete({
+		      source: availableCity
+		    });
+
+		    $.getJSON( "ajax/list.json", function( data ) {
+			  $.each( data, function( key, item ) {
+				var items = [];
+			  	var article = $( "<article>", {
+			    		"class": "search-result row"});
+			  	var img = '<div class="col-xs-12 col-sm-12 col-md-3"><a href="company.html" title="Lorem ipsum" class="thumbnail"><img src="'+item["src"]+'" alt="Lorem ipsum" /></a></div>';
+				items.push(img);
+
+				var div = '<div class="col-xs-12 col-sm-12 col-md-7 excerpet"><h3><a href="company.html" title="">'+item["title"]+'</a></h3><div class="listitem_ratings_group"><div class="listitem_stars '+item["star"]+' style="padding-right:100px; margin-right:15px; border-right: 1px solid #ccc; "><span class="listitem_stars_desc">'+item["star_text"]+'</span></div><div class="listitem_ratings_review"><span class="listitem_ratings_review_adj listitem_ratings_review_good">Good</span><span class="listitem_ratings_review_score">'+item["rating"]+'</span>out of 10 from <a class="listitem_ratings_review_link"> '+item["guest"]+' guest reviews</a></div></div><span class="listitem_location">'+item["address"]+'</span><ul class="nav nav-tabs" role="tablist"><li role="presentation"><a href="#details'+item["name"]+'" aria-controls="speeding" role="tab" data-toggle="tab">Details</a></li><li role="presentation"><a href="#map'+item["name"]+'" aria-controls="parking" role="tab" data-toggle="tab">Map</a></li><li role="presentation"><a href="#rating'+item["name"]+'" aria-controls="filing" role="tab" data-toggle="tab">Rating</a></li></ul></div>';
+				items.push(div);
+
+				div = '<div class="col-xs-12 col-sm-12 col-md-2 excerpet"><h1 style="font-size:54px;"><a href="ticketInfo.html" title="">$'+item["price"]+'</a></h1></div><span class="clearfix borda"></span>';
+				items.push(div);
+
+				rating='<div class="listitem_details_info listitem_details_reviews" style="display: block; background-color:transparent;"><div class="listitem_details_reviews_scoreswrap" style="background-color:transparent;"><div class="listitem_details_reviews_overall"><span class="listitem_details_reviews_adj listitem_details_reviews_good">'+item["review"]+'</span><span class="listitem_details_reviews_oscore">'+item["rating"]+'</span><span class="listitem_details_reviews_count">from '+item["guest"]+' guest reviews</span></div>';
+
+				div = '<div class="tab-content"><div role="tabpanel" class="tab-pane" id="details'+item["name"]+'"><div class="col-xs-12 col-sm-12 col-md-3" style-"display:block"><img style="width:45%;" src="http://ontariotraffictickets.com/wp-content/uploads/2013/06/chris-conway.jpg"><img style="width:45%;" src="http://ontariotraffictickets.com/wp-content/uploads/2013/06/marcello-morra.jpg"></div><div class="col-xs-12 col-sm-12 col-md-9 excerpet"><li>Legal Consultation</li><li>Ticket Analysis</li><li>Plea bargain negociations</li><br/><p>'+item["info"]+'</p><a class="listitem_details_reviews_close listitem_linkme" onclick=$("#details'+item["name"]+'").hide()>Close</a></div></div><div role="tabpanel" class="tab-pane" id="map'+item["name"]+'"><iframe src="'+item["iframe"]+'"	r width="100%" height="10%" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></div><div role="tabpanel" class="tab-pane" id="rating'+item["name"]+'"><div class="col-xs-12 col-sm-12 col-md-3">'+rating+'</div></div></div>';
+
+				items.push(div);
+
+				article.html(items);
+
+
+
+			    article.appendTo( "section" );
+
+			  });
+			});
+		  });
+    </script>
+
+  
+
+</body></html>

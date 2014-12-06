@@ -1,0 +1,189 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Static Top Navbar Example for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/datepicker.css" rel="stylesheet">
+    <link href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <style type="text/css"></style></head>
+
+  <body>
+
+    <div id="main-nav"></div>
+
+
+    <div class="container">
+    	<!-- Main component for a primary marketing message or call to action -->
+        <div role="tabpanel" style="width: 75%; margin: auto;">
+        	<!-- Nav tabs -->
+        	<ul class="nav nav-tabs" role="tablist">
+			    <li role="presentation" class="active"><a href="#speeding" aria-controls="speeding" role="tab" data-toggle="tab">Speeding</a></li>
+			    <li role="presentation"><a href="#traffic" aria-controls="traffic" role="tab" data-toggle="tab">Traffic</a></li>
+			    <li role="presentation"><a href="#parking" aria-controls="parking" role="tab" data-toggle="tab">Parking</a></li>
+			    <li role="presentation"><a href="#filing" aria-controls="filing" role="tab" data-toggle="tab">Filing</a></li>
+			</ul>
+
+		  	<!-- Tab panes -->
+		  	<div class="tab-content" style=" padding:20px; background-color:white">
+		  		<div role="tabpanel" class="tab-pane active" id="speeding">
+		  		<form action="list.html">
+		  			<h3 class="header-font" style="color:#178ac5">Search and Save on Speeding Tickets</h3>
+                	<label class="label-font" style="display:block; font-size:20px">
+                		Where did you get the ticket?
+                		<input name="city" id="city" class="form-control" type="text" placeHolder="City, Province, or Canada Postal Code" style="font-size:18px; height:auto; font-weight:normal"/>
+                	</label><br/>
+                	<label class="label-font" style="float:left; font-size:20px">
+                    	Date of Infraction
+                    	<input class="datepicker" style="display:block; font-weight:normal" name="speedInfractionDate" >
+                	</label>
+                    <label class="label-font" style="float:left; margin-left:30px; font-size:20px">
+                    	Speed
+                    	<select class="form-control header-font" style="font-size:16px; display:block;font-weight:normal" name="speedLimit">
+	                        <option value="1">0-15km over</option>
+	                        <option value="2">16-29km over</option>
+	                        <option value="3">30-49km over</option>
+	                        <option value="4">50+ km over</option>
+	                    </select>
+                	</label>
+                	<input type="submit" onclick="window.location('list.html')" class="btn btn-lg btn-primary btn-block" value="Search" name="search">
+                </form>
+          		</div>
+				<div role="tabpanel" class="tab-pane" id="traffic">
+					<form action="list.html">
+		  			<h3 class="header-font" style="color:#178ac5">Search and Save on Traffic Tickets</h3>
+                	<label class="label-font" style="display:block; font-size:20px">
+                		Where did you get the ticket?
+                		<input name="city" id="city" class="form-control" type="text" placeHolder="City, Province, or Canada Postal Code" style="font-size:18px; height:auto; font-weight:normal"/>
+                	</label><br/>
+                	<label class="label-font" style="float:left; font-size:20px">
+                    	Date of Infraction
+                    	<input class="datepicker" style="display:block; font-weight:normal" name="speedInfractionDate" >
+                	</label>
+                    <label class="label-font" style="float:left; margin-left:30px; font-size:20px">
+                    	Traffic Ticket:
+                    	<select class="form-control header-font" style="font-size:16px; display:block;font-weight:normal" name="speedLimit">
+	                        <option value="1">Red light Camera</option>
+	                        <option value="2">Illegal Left Turn</option>
+	                        <option value="3">Failure to Stop</option>
+	                        <option value="4">Expire License Plate</option>
+	                    </select>
+                	</label>
+                	<input type="submit" onclick="window.location('list.html')" class="btn btn-lg btn-primary btn-block" value="Search" name="search">
+                </form>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="parking">
+					<form action="list.html">
+		  			<h3 class="header-font" style="color:#178ac5">Search and Save on Parking Tickets</h3>
+                	<label class="label-font" style="display:block; font-size:20px">
+                		Where did you get the ticket?
+                		<input name="city" id="city" class="form-control" type="text" placeHolder="City, Province, or Canada Postal Code" style="font-size:18px; height:auto; font-weight:normal"/>
+                	</label><br/>
+                	<label class="label-font" style="float:left; font-size:20px">
+                    	Date of Infraction
+                    	<input class="datepicker" style="display:block; font-weight:normal" name="speedInfractionDate" >
+                	</label>
+                    <label class="label-font" style="float:left; margin-left:30px; font-size:20px">
+                    	Parking Ticket:
+                    	<select class="form-control header-font" style="font-size:16px; display:block;font-weight:normal" name="speedLimit">
+	                        <option value="1">Expire Meter</option>
+	                        <option value="2">Parking without Permit</option>
+	                        <option value="3">Failure to display ticket</option>
+	                        <option value="4">Tow-away zone</option>
+	                    </select>
+                	</label>
+                	<input type="submit" onclick="window.location('list.html')" class="btn btn-lg btn-primary btn-block" value="Search" name="search">
+                </form>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="filing">
+					<form action="list.html">
+		  			<h3 class="header-font" style="color:#178ac5">Search and Save Tickets</h3>
+                	<label class="label-font" style="display:block; font-size:20px">
+                		Where did you get the ticket?
+                		<input name="city" id="city" class="form-control" type="text" placeHolder="City, Province, or Canada Postal Code" style="font-size:18px; height:auto; font-weight:normal"/>
+                	</label><br/>
+                	<label class="label-font" style="float:left; font-size:20px">
+                    	Date of Infraction
+                    	<input class="datepicker" style="display:block; font-weight:normal" name="speedInfractionDate" >
+                	</label>
+                	<input type="submit" onclick="window.location('list.html')" class="btn btn-lg btn-primary btn-block" value="Search" name="search">
+                	</form>
+				</div>
+			</div>
+		</div>
+	</div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    
+    <script>
+    	$('#main-nav').load("nav.html", function() {
+			$('#speedingNav').addClass("active");
+    	});
+
+    	$('#myTab a').click(function (e) {
+		  e.preventDefault()
+		  $(this).tab('show')
+		});
+
+    	var checkout = $('.datepicker').datepicker({
+			}).on('changeDate', function(ev) {
+		  		checkout.hide();
+			}).data('datepicker');
+    	
+    	$(function() {
+		    var availableCity = [
+		      "Toronto, ON Canada", 
+		      "Scarborough, ON Canada",
+		      "Mississauga, ON Canada",
+		      "Brampton, ON Canada",
+		      "Pickering, ON Canada",
+		      "Milton, ON Canada", 
+		      "Waterloo, ON Canada",
+		      "Kitchener, ON Canada",
+		      "Ajax, ON Canada",
+		      "Whitby, ON Canada",
+		      "Oshawa, ON Canada",
+		      "Vaughan, ON Canada",
+		      "Markham, ON Canada",
+		      "Etobicoke, ON Canada",
+		      "Richmond Hill, ON Canada",
+		      "Barrie, ON Canada",
+		      "Sudbury, ON Canada",
+		      "Hamilton, ON Canada",
+		      "Windsor, ON Canada",
+		      "Niagara Falls, ON Canada",
+		      "New Market, ON Canada",
+		      "Peterborough, ON Canada"
+		    ];
+		    $( "#city" ).autocomplete({
+		      source: availableCity
+		    });
+		  });
+    </script>
+
+  
+
+</body></html>
